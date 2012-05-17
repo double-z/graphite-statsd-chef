@@ -1,0 +1,16 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.4.2)
+
+GIT
+  remote: https://github.com/fnichol/chef-rvm
+  ref: master
+  sha: 6411f1194c2f57dc2578e87d9ca89199561512dd
+  specs:
+    rvm (0.9.1)
+
+DEPENDENCIES
+  apt (>= 0)
+  rvm (>= 0)
+
