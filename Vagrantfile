@@ -43,15 +43,8 @@ Vagrant::Config.run do |config|
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
     chef.add_recipe "main"
-    chef.add_recipe "rvm::vagrant"
     chef.json = {
-      :rvm => {
-        :default_ruby => "1.9.3-p194",
-        :rubies => ["1.9.3-p194"],
-        :global_gems => [
-          { :name => "bundler" }
-        ]
-      }
+
     }
   end
 end

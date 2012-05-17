@@ -3,8 +3,6 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'rvm',
-  :git => 'https://github.com/fnichol/chef-rvm'
-
 cookbook 'apt'
-
+cookbook 'python'
+cookbook 'main', :path => 'site-cookbooks/main'
