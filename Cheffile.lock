@@ -3,13 +3,17 @@ SITE
   specs:
     apt (1.4.2)
     build-essential (1.0.0)
-    python (1.0.6)
-      build-essential (>= 0.0.0)
 
 PATH
   remote: site-cookbooks/main
   specs:
     main (1.0.0)
+
+PATH
+  remote: site-cookbooks/python
+  specs:
+    python (1.0.6)
+      build-essential (>= 0.0.0)
 
 DEPENDENCIES
   apt (>= 0)
